@@ -1,0 +1,102 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+
+    .modelsList{
+        width: 20vw;
+    }
+
+    .carsList{
+        width: 80vw;
+
+        .carsListCar{
+            width: 100%;
+            height: 30em;
+            display: flex;
+            flex-wrap: nowrap;
+
+            .picture{
+                width: 80em;
+                height: 20em;
+                padding: 5em;
+                background: grey;
+                // background-image: url('https://www.ssangyong.pl/konfigurator-images/images/tivoli/2017/colors/cars/jazz_brown.png');
+                background-position: 50% 50%;
+                /* top: -50%; */
+                top: 0;
+                /* left: -50%; */
+                background-repeat: no-repeat;
+                background-size: auto 100%;;
+                border: 1px solid black;
+
+            }
+
+            .values{
+                width: 100em;
+                height: 20em;
+                background: lightgoldenrodyellow;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                .valuesTitle{
+                    margin-bottom: 1em;
+                }
+
+                .valuesProps{
+                    display: flex;
+                }
+            }
+            .price{
+                width: 80em;
+                height: 20em;
+                background: grey;
+                border: 1px solid black;
+
+                .priceSrp,
+                .priceDiscount,
+                .priceHot,
+                .priceAsk{
+                    width: 100%;
+                    height: 25%;
+                    border: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .priceSrp,
+                .priceDiscount,
+                .priceHot{
+                    text-transform: uppercase;
+                }
+                .priceSrp,
+                .priceDiscount{
+                    background: lightgray;
+                }
+                .priceHot{
+                    color: red;
+                }
+                .priceAsk{
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
